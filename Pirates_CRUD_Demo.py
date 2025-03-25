@@ -166,12 +166,12 @@ def show_menu_one():
 def sailor_list(self: list) -> None:
     """Prints all crew members."""
     names = "|".join(attr.center(MAX_WIDTH) for attr in self.ATTRS_ORDER) # joins each element of list using "|" and centering with "max_width"
-    print (f"{len(names) * "-"}\n{names}\n{len(names) * "-"}")
+    print (f"{len(names) * '-'}\n{names}\n{len(names) * '-'}")
     for sailor in self.crew_list:
         print(sailor)
     print(len(names) * "-")
     total_cost = self.count_cost()
-    print(f"{(len(names) - MAX_WIDTH) * " "}{str(total_cost).center(MAX_WIDTH)}")
+    print(f"{(len(names) - MAX_WIDTH) * ' '}{str(total_cost).center(MAX_WIDTH)}")
 
 
 def main():
