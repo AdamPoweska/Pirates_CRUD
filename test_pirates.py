@@ -77,4 +77,3 @@ def test_add_crew_member_correct():
     expected = "Sailor(num=0,name='John', age='20', limbs='4', eyes='2', parrot='0', proffesion='s', sailing='5', fighting=0, cost=0)"
 
     assert got == expected
-
